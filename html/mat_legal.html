@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chess</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/chessboard-1.0.0.min.css">
+    <script src="../js/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+    <div class="menu">
+
+        <a href="../index.html"><img src="../img/LogoBlc.png" alt="LogoDuSite" style="width: 200px; height: auto;"></a>
+        <a class="h" href="ouvertures.html">Ouvertures</a>
+        <a class="h" href="mat.html">Mat</a>
+        <a class="h" href="entrainement.html">Entrainement</a>
+        <a class="h" href="collection.html">Collection</a>
+        <a class="h" href="siteutiles.html">Sites Utiles</a>
+        <a class="h" href="autre.html">Autre</a>
+
+    </div>
+
+    <div class="titre">Le Mat de Legal</div>
+    <div id="board" class='center-div' style="width: 500px"></div>
+
+    <div class="boutonselect">
+        <a onclick="legalbackward()" class="boutoncustom2 noselect"><</a>
+        <a onclick="legal()" class="boutoncustom1 noselect">>
+        </a>
+    </div>
+
+    <div class="retour"><a href="mat.html" class="boutoncustom4">Retour</a></div>
+
+    <script src="../js/legal.js"></script>
+
+</body>
+
+</html>

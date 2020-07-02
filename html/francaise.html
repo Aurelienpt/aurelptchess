@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chess</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/chessboard-1.0.0.min.css">
+    <script src="../js/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+    <div class="menu">
+
+        <a href="../index.html"><img src="../img/LogoBlc.png" alt="LogoDuSite" style="width: 200px; height: auto;"></a>
+        <a class="h" href="ouvertures.html">Ouvertures</a>
+        <a class="h" href="mat.html">Mat</a>
+        <a class="h" href="entrainement.html">Entrainement</a>
+        <a class="h" href="collection.html">Collection</a>
+        <a class="h" href="siteutiles.html">Sites Utiles</a>
+        <a class="h" href="autre.html">Autre</a>
+
+    </div>
+
+    <div class="titre">La Défense Française</div>
+
+    <table class="tableau">
+        <tr>
+            <td>
+                <div id="board" class='center-div' style="width: 500px"></div>
+            </td>
+            <td>
+                <div class="boutonselect2">
+                    <a onclick="reset(); [ech, ava, tar, cla, rub, win] = [0,0,0,0,0,0];"
+                        class="boutoncustom5 noselect">reset</a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante d'échange</span><br>
+                    <a onclick="ech = deplacement_backward(moves_echange, ech)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="ech = deplacement(moves_echange, ech)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante d'avance</span><br>
+                    <a onclick="ava = deplacement_backward(moves_avance, ava)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="ava = deplacement(moves_avance, ava)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante Tarrasch</span><br>
+                    <a onclick="tar = deplacement_backward(moves_tar, tar)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="tar = deplacement(moves_tar, tar)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante classique</span><br>
+                    <a onclick="cla = deplacement_backward(moves_cla,cla)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="cla = deplacement(moves_cla,cla)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante Rubinstein</span><br>
+                    <a onclick="rub = deplacement_backward(moves_rub,rub)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="rub = deplacement(moves_rub,rub)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante Winawe</span><br>
+                    <a onclick="win = deplacement_backward(moves_win,win)" class="boutoncustom2 noselect">
+                        <</a> <a onclick="win = deplacement(moves_win,win)" class="boutoncustom1 noselect">>
+                    </a>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <div class="retour2"><a href="ouvertures.html" class="boutoncustom4">Retour</a></div>
+
+    <script src="../js/francaise.js"></script>
+
+</body>
+
+</html>
