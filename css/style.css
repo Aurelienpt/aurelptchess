@@ -229,3 +229,16 @@ body {
 	background-color: black;
 
 }
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.collection-rekt {
+	width: 250px;
+	height: auto;
+	margin: 15px;
+}
