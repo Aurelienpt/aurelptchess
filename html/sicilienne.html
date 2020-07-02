@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AurelptChess</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/chessboard-1.0.0.min.css">
+    <script src="../js/chessboard-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+<body>
+
+    <div class="menu">
+
+        <a href="../index.html"><img src="../img/LogoBlc.png" alt="LogoDuSite" style="width: 200px; height: auto;"></a>
+        <a class="h" href="ouvertures.html">Ouvertures</a>
+        <a class="h" href="mat.html">Mats</a>
+        <a class="h" href="entrainement.html">Entrainement</a>
+        <a class="h" href="collection.html">Collection</a>
+        <a class="h" href="siteutiles.html">Sites Utiles</a>
+        <a class="h" href="autre.html">Autre</a>
+
+    </div>
+
+    <div class="titre">La Défense Sicilienne</div>
+
+    <table class="tableau">
+        <tr>
+            <td>
+                <div id="board" class='center-div' style="width: 500px"></div>
+            </td>
+            <td>
+                <div class="boutonselect2">
+                    <a onclick="reset(); [dra, mar, ric] = [0,0,0];"
+                        class="boutoncustom5 noselect">reset</a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante de Scheveningue</span><br>
+                    <a onclick="sch = deplacement_backward(moves_sch, sch)" class="boutoncustom2 noselect"><</a>
+                    <a onclick="sch = deplacement(moves_sch, sch)" class="boutoncustom1 noselect">></a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Variante du dragon</span><br>
+                    <a onclick="dra = deplacement_backward(moves_dra, dra)" class="boutoncustom2 noselect"><</a>
+                    <a onclick="dra = deplacement(moves_dra, dra)" class="boutoncustom1 noselect">></a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Système Maroczy</span><br>
+                    <a onclick="mar = deplacement_backward(moves_mar, mar)" class="boutoncustom2 noselect"><</a>
+                    <a onclick="mar = deplacement(moves_mar, mar)" class="boutoncustom1 noselect">></a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Attaque Richter-Rauzer</span><br>
+                    <a onclick="ric = deplacement_backward(moves_ric, ric)" class="boutoncustom2 noselect"><</a>
+                    <a onclick="ric = deplacement(moves_ric, ric)" class="boutoncustom1 noselect">></a>
+                </div>
+                <div class="boutonselect2">
+                    <span style="font-weight: bold;">Plus à venir...</span><br>
+                </div>
+            </td>
+        </tr>
+        
+    </table>
+
+    <div class="retour2"><a href="ouvertures.html" class="boutoncustom4">Retour</a></div>
+
+    <script src="../js/sicilienne.js"></script>
+
+</body>
+
+</html>
